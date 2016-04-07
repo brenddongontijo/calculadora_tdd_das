@@ -1,4 +1,5 @@
 from math import sqrt
+from math import log
 
 class ClassCalculator:
 	def sum(self, firstNumber, secondNumber):
@@ -15,3 +16,6 @@ class ClassCalculator:
 
 	def radical(self, number):
 		return sqrt(number)
+
+	def log(self, number, base):
+		return log(number, base)

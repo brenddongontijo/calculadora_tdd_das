@@ -20,3 +20,7 @@ def test_divide():
 def test_radical():
 	calculator = ClassCalculator()
 	assert calculator.radical(25) == 5
+
+def test_log():
+	calculator = ClassCalculator()
+	assert calculator.log(100, 10) == 2
