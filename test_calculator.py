@@ -28,3 +28,7 @@ def test_log():
 def test_factorial():
 	calculator = ClassCalculator()
 	assert calculator.factorial(5) == 120
+
+def test_absolute():
+	calculator = ClassCalculator()
+	assert calculator.abs(-5) == 5
