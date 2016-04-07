@@ -4,3 +4,6 @@ class ClassCalculator:
 
 	def minus(self, firstNumber, secondNumber):
 		return firstNumber - secondNumber
+
+	def multiply(self, firstNumber, secondNumber):
+		return firstNumber * secondNumber
