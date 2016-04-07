@@ -1,3 +1,5 @@
+from math import sqrt
+
 class ClassCalculator:
 	def sum(self, firstNumber, secondNumber):
 		return firstNumber + secondNumber
@@ -10,3 +12,6 @@ class ClassCalculator:
 
 	def divide(self, firstNumber, secondNumber):
 		return firstNumber / secondNumber
+
+	def radical(self, number):
+		return sqrt(number)

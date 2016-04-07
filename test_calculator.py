@@ -16,3 +16,7 @@ def test_multiply():
 def test_divide():
 	calculator = ClassCalculator()
 	assert calculator.divide(4,2) == 2
+
+def test_radical():
+	calculator = ClassCalculator()
+	assert calculator.radical(25) == 5
