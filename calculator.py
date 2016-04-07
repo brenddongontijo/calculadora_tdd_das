@@ -1,5 +1,4 @@
-from math import sqrt
-from math import log
+from math import sqrt, log, factorial
 
 class ClassCalculator:
 	def sum(self, firstNumber, secondNumber):
@@ -19,3 +18,6 @@ class ClassCalculator:
 
 	def log(self, number, base):
 		return log(number, base)
+
+	def factorial(self, number):
+		return factorial(number)

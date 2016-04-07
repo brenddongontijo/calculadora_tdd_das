@@ -24,3 +24,7 @@ def test_radical():
 def test_log():
 	calculator = ClassCalculator()
 	assert calculator.log(100, 10) == 2
+
+def test_factorial():
+	calculator = ClassCalculator()
+	assert calculator.factorial(5) == 120
