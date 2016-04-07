@@ -7,3 +7,6 @@ class ClassCalculator:
 
 	def multiply(self, firstNumber, secondNumber):
 		return firstNumber * secondNumber
+
+	def divide(self, firstNumber, secondNumber):
+		return firstNumber / secondNumber
