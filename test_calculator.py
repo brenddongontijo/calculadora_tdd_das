@@ -19,7 +19,7 @@ class Test:
 		calculator = ClassCalculator()
 		assert calculator.multiply(2,4) == 8
 		assert calculator.multiply(50,-4) == -200
-		assert calculator.multiply(200, 5) == 1000 
+		assert calculator.multiply(200, 5) == 1000
 
 	def test_divide(self):
 		calculator = ClassCalculator()
@@ -30,12 +30,14 @@ class Test:
 		with pytest.raises(ZeroDivisionError):
 			calculator.divide(100,0)
 
-
 	def test_radical(self):
 		calculator = ClassCalculator()
 		assert calculator.radical(25) == 5
 		assert calculator.radical(256) == 16
 		assert calculator.radical(81) == 9
+
+		with pytest.raises(ValueError):
+			calculator.radical(-9)
 
 	def test_log(self):
 		calculator = ClassCalculator()
@@ -43,8 +45,15 @@ class Test:
 
 	def test_factorial(self):
 		calculator = ClassCalculator()
-		assert calculator.factorial(5) == 120
+		assert calculator.factorial(10) == 3628800
+		assert calculator.factorial(15) == 1307674368000
+		assert calculator.factorial(6) == 720
+		
+		with pytest.raises(ValueError):
+			calculator.factorial(-1) == 1
 
 	def test_absolute(self):
 		calculator = ClassCalculator()
 		assert calculator.abs(-5) == 5
+		assert calculator.abs(0) == 0
+		assert calculator.abs(50) == 50
