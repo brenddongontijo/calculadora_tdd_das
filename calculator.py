@@ -1,6 +1,6 @@
 from math import sqrt, log, factorial, fabs
 
-class ClassCalculator:
+class ClassCalculator:		
 	def sum(self, firstNumber, secondNumber):
 		return firstNumber + secondNumber
 
